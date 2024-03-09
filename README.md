@@ -256,5 +256,5 @@ As soon as the model detects drowsiness, the model will send an API request call
 
 Through this project we can create a safer work environment, Support HR and Legal management, Reduce psychological and physical stress, early detection and prevention and overcome reporting hesitancy. If this project is used efficiently it may also lead to huge decrease in percentage of sexual harassment cases .
 
-To view this project on Intel DevMesh : [click here!](https://devmesh.intel.com/projects/driver-drowsiness-detection-70c5e4)
+To view this project on Intel DevMesh : [click here!](https://devmesh.intel.com/projects/sexual-harassment-detection-in-workplace-559ed4)
 <hr/>
