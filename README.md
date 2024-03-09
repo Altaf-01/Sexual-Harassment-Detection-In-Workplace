@@ -1,6 +1,5 @@
 ![DRIVER_DROWSINESS_DETECTION_(CNN)-OneAPI](https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/3383df7e-107e-459c-81be-4d290c8c1ee3.png)
-    ![made-with-jupyter-notebook](https://user-images.githubusercontent.com/130077430/230479936-93dbcbd0-275b-4af7-9231-cceeb91d8a84.svg)          ![migrated-to-oneapi](https://user-images.githubusercontent.com/130077430/230487901-cbcdf13f-1d36-477d-9a7c-1917fa579da9.svg)![built-by-team-geeks](https://user-images.githubusercontent.com/130077430/230486285-e9e8fdbc-4579-4d0e-a448-550b423199b2.svg)
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gangeshbaskerr/DriverDrowsinessDetection-OneAPI"> <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/gangeshbaskerr/DriverDrowsinessDetection-OneAPI?style=social">
+    ![made-with-jupyter-notebook](https://user-images.githubusercontent.com/130077430/230479936-93dbcbd0-275b-4af7-9231-cceeb91d8a84.svg)          ![migrated-to-oneapi](https://user-images.githubusercontent.com/130077430/230487901-cbcdf13f-1d36-477d-9a7c-1917fa579da9.svg)
 <hr/>
 
 # Inspiration  <img src="https://user-images.githubusercontent.com/130077430/230579469-c1263cef-784e-4845-93fb-2f73544e49e1.png" width="90" height="80"> 
@@ -12,7 +11,7 @@ Throughout our lives, we've been exposed to countless reports and stories in new
 
 # Problem Statement <img src="https://user-images.githubusercontent.com/130077430/230730194-a7389fed-f5fd-48d3-856a-0212057f2500.png" width="90" height="80">
 
-My main goal is to build an innovative technological solution that could detect sexual harassment in real-time, which is much needed to fill in the gap left void by traditional methods,  by which I aim to create a safer work environment, overcome reporting hesitancy, support HR and legal management, reduce psychological and physical stress and do early detection and prevention.
+Our main goal is to build an innovative technological solution that could detect sexual harassment in real-time, which is much needed to fill in the gap left void by traditional methods,  by which I aim to create a safer work environment, overcome reporting hesitancy, support HR and legal management, reduce psychological and physical stress and do early detection and prevention.
 
 <hr/>
 
@@ -60,7 +59,7 @@ The VGG16 model is designed and trained to classify images as either Harassment 
 
 <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/1baa15d7-8848-4e6d-84d2-e2888943d2c1.png" width="650" height="500">  <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/17fa9906-08f0-48cf-a20a-7d811252215a.png" width="340" height="500">
 
-## 5️⃣ Train the model using Intel OneAPI to get better results
+## 5️⃣ Training the model using Intel OneAPI to get better results
 
 <img src="https://user-images.githubusercontent.com/72274851/218504609-585bcebe-5101-4477-bdd2-3a1ba13a64a8.png" width="190" height="100"><img src="https://aditech.in/wp-content/uploads/2020/07/image_2020_07_17T06_08_48_297Z.png" width="800" height="100">
 
@@ -77,7 +76,58 @@ Having multiple types of compute architectures leads to different programming an
 4) OneAPI allows users to transcend Hardware restrictions and provide better performance for low powered computers
 5) Accuracy will improve while using OneAPI
 
-<img src="https://user-images.githubusercontent.com/130077430/230733185-94fbda70-6fe6-40af-985c-d7f8a74a3521.jpg" width="495" height="400"><img src="https://user-images.githubusercontent.com/130077430/230733189-78e03097-7c88-4f42-9c0e-159e58aa7972.jpg" width="495" height="400">
+**We used the following Intel® oneAPI libraries and frameworks to increase our performance and efficiency :**
+
+* <b>Intel® oneAPI Data Analytics Library (oneDAL)</b>
+
+we used Intel® Extension for Scikit-learn*, a key component of oneDAL to enhance our existing scikit code by patching it.
+
+Installation:
+<code>pip install scikit-learn-intelex</code> 
+
+Usage:<br>
+<code>from sklearnex import patch_sklearn
+patch_sklearn()</code>
+
+By using this library we were able to see a 2x difference in the perfomance
+
+* <b>Intel® oneAPI Deep Neural Network Library (oneDNN)</b>
+
+To optimize deep learning applications on Intel® CPUs and GPUs, We integrated the oneAPI Deep Neural Network Library (oneDNN). To enable oneDNN optimizations for TensorFlow* running on Intel® hardware, We used the following code:
+
+<code>os.environ['TF_ENABLE_ONEDNN_OPTS'] = '1'
+os.environ['DNNL_ENGINE_LIMIT_CPU_CAPABILITIES'] = '0'</code> 
+
+* <b>Intel® oneAPI DPC++ Library (oneDPL)</b>
+
+The Intel® oneAPI DPC++ Library (oneDPL) aims to simplify SYCL* programming efforts across devices for high-performance parallel applications. We harnessed the power of oneDPL using specific environment variables to optimize performance and memory utilization.
+
+<code>os.environ['ONEAPI_DEVICE_SELECTOR'] = 'opencl:*'
+os.environ['SYCL_ENABLE_DEFAULT_CONTEXTS'] = '1'
+os.environ['SYCL_ENABLE_FUSION_CACHING'] = '1'</code>
+
+* <b>Intel® oneAPI AI Analytics Toolkit (AI Kit)</b>
+
+The Intel® oneAPI AI Analytics Toolkit (AI Kit) offers an integrated solution for preprocessing, machine learning, and model development. To optimize deep learning training on Intel® XPUs and streamline inference, We utilized the toolkit's Intel®-optimized deep-learning frameworks for TensorFlow*.
+
+<code>pip install --upgrade intel-extension-for-tensorflow[cpu]</code>
+
+We set the backend type to CPU for Intel® Tensorflow Operator Optimization:
+
+<code>os.environ['ITEX_XPU_BACKEND'] = 'CPU'</code>
+
+And enabled Advanced Automatic Mixed Precision for improved inference speed and reduced memory consumption:
+
+<code>os.environ['ITEX_AUTO_MIXED_PRECISION'] = '1'</code>
+
+### Performance Comparison
+The following graphs illustrate the substantial performance improvements achieved by integrating Intel® oneAPI libraries and frameworks into our models:
+1. Comparing the accuracy across various development Environments<br><br>
+<img src="https://user-images.githubusercontent.com/130077430/230733185-94fbda70-6fe6-40af-985c-d7f8a74a3521.jpg" width="495" height="400">
+2. Comparing the time taken to complete one epoch in various development Environments<br><br>
+<img src="https://user-images.githubusercontent.com/130077430/230733189-78e03097-7c88-4f42-9c0e-159e58aa7972.jpg" width="495" height="400">
+
+By leveraging the power of Intel® oneAPI libraries and frameworks, our models achieves remarkable performance enhancements and optimized memory utilization . The seamless integration of oneDAL, oneDNN, oneDPL, and AI Kit contributes to faster training, efficient inference, and improved overall user experience.
 
 To migrate your project to OneAPI : 
 [click here!](https://devcloud.intel.com/oneapi/get_started/) to get started
@@ -92,7 +142,7 @@ For reference : [click here!](https://www.youtube.com/watch?v=NkJXCalgmeU)
 
 # Accuracy and Loss      <img src="https://user-images.githubusercontent.com/130077430/230577475-9af43d03-1a50-41c2-99b2-e1a28b69c84e.png" width="90" height="80">
 
-We did 80 epochs, to get a good accuracy from the model i.e. 98% for training accuracy and 97% for validation accuracy.
+We did 250 epochs, to get a good accuracy from the model i.e. 94% for training accuracy and 92% for validation accuracy.
 
 <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/7dde241e-e9cd-4a49-8977-dcae1e12da3c.png" width="1000" height="500"> 
 
@@ -136,6 +186,33 @@ _These are just a few examples of the knowledge and skills that i likely gained 
 
 # Project Deployment <img src="https://user-images.githubusercontent.com/130077430/230725195-2f024fca-9cae-4e91-85dc-4c12e0e1fcb0.png" width="90" height="80">
 
+# Harassment Detection Model with Streamlit
+
+## Overview
+This project implements a harassment detection model using Streamlit, capable of processing both images and videos to detect signs of sexual harassment. The model is built to analyze the content of the provided source and provide insights regarding potential harassment. 
+
+## Features
+- Processes both images and videos for harassment detection.
+- Detects signs of sexual harassment within the provided source.
+- Provides a user-friendly interface for easy interaction.
+
+## Usage
+To use the harassment detection model, follow these steps:
+1. Access the Streamlit application using the following link: [Harassment Detection Streamlit App](https://harassment-detection.streamlit.app/)
+2. Upload the image or video you want to analyze.
+3. Wait for the model to process the content.
+4. View the results indicating whether signs of sexual harassment are detected.
+
+## Streamlit Application
+Access the Streamlit application [here](https://harassment-detection.streamlit.app/).
+## Sample Output
+**Safe Working Environment:**
+![Screenshot (94)](https://github.com/Altaf-01/Sexual-Harassment-Detection/assets/91909939/fc79f9c7-529d-4b8f-a3c6-6773b2889be3)
+**Sexual Harassment Detected:**
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection/assets/91909939/512e20d4-3203-4a58-bc35-38ee21f50827)
+
+
+# Harassment Detection App as a POC
 We have built an app using Flutter. Flutter helps Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase. It is a cross-platform app development framework by Google which goes hand in hand with the model to help ensure the safety of the user and other commuters. 
 
 As soon as the model detects drowsiness, the model will send an API request call to the client app, which notifies the user to take some rest and shows the navigation option to the nearest resting places. If the user isn't drowsy, the app will give 10 seconds buffer time within which the user can confirm that he isn't sleepy by pressing the prompt on the screen. If the user is drowsy he will get a option for getting driving assistance from the nearby driving service providers. If the user has been detected drowsy more than three times within 10 minutes, a notification is sent to the highway patrol and the nearby drivers as a concern for the safety of other drivers and the drowsy driver.
