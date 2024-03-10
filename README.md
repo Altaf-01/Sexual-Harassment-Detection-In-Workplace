@@ -122,9 +122,8 @@ And enabled Advanced Automatic Mixed Precision for improved inference speed and 
 
 ### Performance Comparison
 The following graphs illustrate the substantial performance improvements achieved by integrating Intel® oneAPI libraries and frameworks into our models:
-1. Comparing the accuracy across various development Environments<br><br>
-<img src="https://user-images.githubusercontent.com/130077430/230733185-94fbda70-6fe6-40af-985c-d7f8a74a3521.jpg" width="495" height="400">
-2. Comparing the time taken to complete one epoch in various development Environments<br><br>
+
+1. Comparing the time taken to complete one epoch in various development Environments<br><br>
 <img src="https://user-images.githubusercontent.com/130077430/230733189-78e03097-7c88-4f42-9c0e-159e58aa7972.jpg" width="495" height="400">
 
 By leveraging the power of Intel® oneAPI libraries and frameworks, our models achieves remarkable performance enhancements and optimized memory utilization . The seamless integration of oneDAL, oneDNN, oneDPL, and AI Kit contributes to faster training, efficient inference, and improved overall user experience.
