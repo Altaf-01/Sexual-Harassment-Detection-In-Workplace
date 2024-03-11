@@ -200,6 +200,9 @@ Access the Streamlit application [here](https://harassment-detection.streamlit.a
 ![Screenshot (94)](https://github.com/Altaf-01/Sexual-Harassment-Detection/assets/91909939/fc79f9c7-529d-4b8f-a3c6-6773b2889be3)
 **Sexual Harassment Detected:**
 ![image](https://github.com/Altaf-01/Sexual-Harassment-Detection/assets/91909939/512e20d4-3203-4a58-bc35-38ee21f50827)
+**Live demo**
+<br/>
+![live_demo](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/b3b47795-0b11-4bc8-bda2-fc48aa1c6c8c)
 
 
 
