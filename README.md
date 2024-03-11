@@ -5,7 +5,6 @@
 # Inspiration  <img src="https://user-images.githubusercontent.com/130077430/230579469-c1263cef-784e-4845-93fb-2f73544e49e1.png" width="90" height="80"> 
 Throughout our lives, we've been exposed to countless reports and stories in newspapers and online platforms, underscoring the distressing prevalence of sexual harassment incidents. What strikes me even more profoundly is the significant reluctance victims often experience when reporting such incidents due to fears of retaliation or social stigma. This reporting hesitancy and the lack of practical technological solutions have intensified my resolve to address this critical issue. The absence of practical tools and measures to combat such behaviour compelled me to develop the "Sexual Harassment Detection at Workplace" project. The driving force behind this endeavour is not only to close the gap between the gravity of the problem and the available solutions but also to contribute to a safer and more inclusive work environment by harnessing the potential of innovative technological advancements.
 
-<img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/c3cc1325-ccd7-43cb-8a01-98a4882a6d14" width="330" height="280"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/8a110924-77f3-4e0c-9155-556afdde1105.png" width="330" height="280"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/4249f60e-e49c-4711-8b1e-c9911466fd84" width="330" height="280">
 
 <hr/>
 
@@ -43,7 +42,6 @@ implemented Transfer Learning techniques by leveraging pre-trained models such a
        it has 2 folder which are :
        1) yes - having 1000 pictures(Harassment)
        2) no - having 1000 pictures(Healthy work environment)
- <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/4791552d-9924-42e7-b710-4bd717e860a6.jpg" width="495" height="500"> <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/bf8a8672-cf58-46a6-a466-b72fe0be1bac.jpg" width="495" height="500">
  
 ## 3️⃣ Data preprocessing
 1. preprocess the images from the yes and no folder.
@@ -57,7 +55,6 @@ implemented Transfer Learning techniques by leveraging pre-trained models such a
 ## 4️⃣ Build and train the VGG16 model
 The VGG16 model is designed and trained to classify images as either Harassment or Healthy.
 
-<img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/1baa15d7-8848-4e6d-84d2-e2888943d2c1.png" width="650" height="500">  <img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/17fa9906-08f0-48cf-a20a-7d811252215a.png" width="340" height="500">
 
 ## 5️⃣ Training the model using Intel OneAPI to get better results
 
@@ -143,18 +140,12 @@ For reference : [click here!](https://www.youtube.com/watch?v=NkJXCalgmeU)
 
 We did 250 epochs, to get a good accuracy from the model i.e. 94% for training accuracy and 92% for validation accuracy.
 
-<img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/7dde241e-e9cd-4a49-8977-dcae1e12da3c.png" width="1000" height="500"> 
 
 <hr/>
 
-# Output <img src="https://cdn4.iconfinder.com/data/icons/business-startup-36/64/552-512.png" width="90" height="80">
-## Harassment
 
-<p align="middle"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/09892e38-2275-402a-b8be-5df1173076c3.gif" width="500" height="500">
     
-## No Harassment
 
-<p align="middle"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/15c0173b-bf4c-445c-9ce3-89cb00eb2e51.gif" width="500" height="500">
     
 <hr/>
 
@@ -216,8 +207,7 @@ We have built an app using Flutter. Flutter helps Build, test, and deploy beauti
 
 As soon as the model detects drowsiness, the model will send an API request call to the client app, which notifies the user to take some rest and shows the navigation option to the nearest resting places. If the user isn't drowsy, the app will give 10 seconds buffer time within which the user can confirm that he isn't sleepy by pressing the prompt on the screen. If the user is drowsy he will get a option for getting driving assistance from the nearby driving service providers. If the user has been detected drowsy more than three times within 10 minutes, a notification is sent to the highway patrol and the nearby drivers as a concern for the safety of other drivers and the drowsy driver.
 
-<img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/4b16dac3-96a4-4f90-8694-f67d30b6268c" width="247" height="500"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/39462df2-25da-4ec0-b430-d71747678136" width="247" height="500"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/f4598f49-c779-4a21-8dd1-4c5e2808f6f1" width="497" height="500">
-<hr/>
+
 
 # One more thing <img src="https://cdn.freebiesupply.com/logos/large/2x/apple1-logo-png-transparent.png" width="60" height="60">
 
