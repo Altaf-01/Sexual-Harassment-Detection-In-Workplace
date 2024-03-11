@@ -1,5 +1,4 @@
-    ![made-with-jupyter-notebook](https://user-images.githubusercontent.com/130077430/230479936-93dbcbd0-275b-4af7-9231-cceeb91d8a84.svg)          ![migrated-to-oneapi](https://user-images.githubusercontent.com/130077430/230487901-cbcdf13f-1d36-477d-9a7c-1917fa579da9.svg)
-<hr/>
+
 
 # Inspiration  <img src="https://user-images.githubusercontent.com/130077430/230579469-c1263cef-784e-4845-93fb-2f73544e49e1.png" width="90" height="80"> 
 Throughout our lives, we've been exposed to countless reports and stories in newspapers and online platforms, underscoring the distressing prevalence of sexual harassment incidents. What strikes me even more profoundly is the significant reluctance victims often experience when reporting such incidents due to fears of retaliation or social stigma. This reporting hesitancy and the lack of practical technological solutions have intensified my resolve to address this critical issue. The absence of practical tools and measures to combat such behaviour compelled me to develop the "Sexual Harassment Detection at Workplace" project. The driving force behind this endeavour is not only to close the gap between the gravity of the problem and the available solutions but also to contribute to a safer and more inclusive work environment by harnessing the potential of innovative technological advancements.
