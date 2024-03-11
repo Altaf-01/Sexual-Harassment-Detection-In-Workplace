@@ -24,6 +24,8 @@ Recognizing and tackling harassment instances can be complex due to victim hesit
 Our model uses a CNN(Convolutional Neural Network) for detection since the dataset uses images using a Deep Learning model to make better detection. A dataset containing images will be used, out of which half will have harassment images, and the other half will show a normal work environment. We will follow an 80:20 split, where 80% of the images will be used for training our model, and the remaining 20% will be reserved for testing the model. To further enhance the accuracy of the detection system, we have 
 implemented Transfer Learning techniques by leveraging pre-trained models such as VGG16, Xception, and others. These models have been trained on large-scale datasets and come with high accuracy levels.
 
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/4869db22-eb39-401e-8d1e-38458b2b1d3f)
+
 <hr/>
 
 # Procedure <img src="https://th.bing.com/th/id/R.02832177b40b49d50674126476f980c3?rik=aXibwvpQe645bg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fjcx%2f6rb%2fjcx6rbngi.png&ehk=xllVkMLnEE%2fEXx%2fnWbpceiVVfvTNGJmODcZ9fEBJVGA%3d&risl=&pid=ImgRaw&r=0" width="120" height="100"> 
@@ -200,10 +202,17 @@ Access the Streamlit application [here](https://harassment-detection.streamlit.a
 ![image](https://github.com/Altaf-01/Sexual-Harassment-Detection/assets/91909939/512e20d4-3203-4a58-bc35-38ee21f50827)
 
 
-# Harassment Detection App as a POC
-We have built an app using Flutter. Flutter helps Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase. It is a cross-platform app development framework by Google which goes hand in hand with the model to help ensure the safety of the user and other commuters. 
 
-As soon as the model detects drowsiness, the model will send an API request call to the client app, which notifies the user to take some rest and shows the navigation option to the nearest resting places. If the user isn't drowsy, the app will give 10 seconds buffer time within which the user can confirm that he isn't sleepy by pressing the prompt on the screen. If the user is drowsy he will get a option for getting driving assistance from the nearby driving service providers. If the user has been detected drowsy more than three times within 10 minutes, a notification is sent to the highway patrol and the nearby drivers as a concern for the safety of other drivers and the drowsy driver.
+
+# Harassment Detection App as a POC
+
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/a36353fd-4907-4f0a-9145-eafd01e9543f)
+
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/8042317e-e4e4-4f01-8b42-0f3edfaf4b4c)
+
+
+
+We have built an app using Flutter. Flutter helps Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase. It is a cross-platform app development framework by Google 
 
 
 
