@@ -1,3 +1,8 @@
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/91909939/f3a72c5b-86f6-46b8-a78c-7e3353a6c4f8)
+    ![made-with-jupyter-notebook](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/91909939/006282ec-3abd-4c9f-905a-b96c70e10bfb)
+          ![migrated-to-oneapi](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/91909939/8de93f8a-389c-4a25-a66f-e6acb6073b54)
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Altaf-01/Sexual-Harassment-Detection-In-Workplace"> <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Altaf-01/Sexual-Harassment-Detection-In-Workplace?style=social">
+<hr/>
 
 
 # Inspiration  <img src="https://user-images.githubusercontent.com/130077430/230579469-c1263cef-784e-4845-93fb-2f73544e49e1.png" width="90" height="80"> 
