@@ -214,9 +214,7 @@ Access the Streamlit application [here](https://harassment-detection.streamlit.a
 
 # Harassment Detection App as a POC
 
-![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/a36353fd-4907-4f0a-9145-eafd01e9543f)
-
-![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/8042317e-e4e4-4f01-8b42-0f3edfaf4b4c)
+![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/a36353fd-4907-4f0a-9145-eafd01e9543f) ![image](https://github.com/Altaf-01/Sexual-Harassment-Detection-In-Workplace/assets/116085472/8042317e-e4e4-4f01-8b42-0f3edfaf4b4c)
 
 
 
